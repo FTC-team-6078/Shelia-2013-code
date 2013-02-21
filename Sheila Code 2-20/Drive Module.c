@@ -25,5 +25,5 @@ void Driver()
 
 
 	motor[motor_left]= y1;
-	motor[right]= y2;
+	motor[motor_right]= y2;
 }

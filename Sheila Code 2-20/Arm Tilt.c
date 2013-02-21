@@ -4,7 +4,7 @@ void arm_tilt(){
 		if(joy2Btn(8))
 		{
 
-			motor[arm_tilt_motor] = -100;
+			motor[arm_tilt_motor] = -25;
 
 		}
 
@@ -30,7 +30,7 @@ void arm_tilt(){
 	{
 		if(joy2Btn(6))
 		{
-			motor [arm_tilt_motor] = 100;
+			motor [arm_tilt_motor] = 25;
 
 		}
 
@@ -41,7 +41,7 @@ void arm_tilt(){
 		}
 		if(joy2Btn(8))
 		{
-			motor [arm_tilt_motor] = -100;
+			motor [arm_tilt_motor] = -25;
 
 		}
 		else

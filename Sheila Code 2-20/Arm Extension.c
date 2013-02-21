@@ -2,7 +2,7 @@ void arm_extension()
 {
 	if(joy2Btn(5))
 	{
-		motor [arm_extension_motor] = 100;
+		motor [arm_extension_motor] = 25;
 
 	}
 
