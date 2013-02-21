@@ -1,27 +1,16 @@
 void arm_extension()
 {
-	if(joy2Btn(5))
-	{
-		motor [arm_extension_motor] = 25;
+        int extensionPower = 0;
 
+	if(joy2Btn(BTN_EXTENSION_UP))
+	{
+		extensionPower = POWER_EXTENSION_UP;
 	}
 
-	else
+	if(joy2Btn(BTN_EXTENSION_DOWN))
 	{
-		motor [arm_extension_motor] = 0;
-
-	}
-	if(joy2Btn(7))
-	{
-		motor [arm_extension_motor] = -100;
-
-	}
-	else
-	{
-		motor [arm_extension_motor] = 0;
-
+		extensionPower = POWER_EXTENSION_DOWN;
 	}
 
-
-
+	motor [arm_extension_motor] = extensionPower;
 }

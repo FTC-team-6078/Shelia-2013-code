@@ -1,11 +1,11 @@
 void ramp()
-
 {
-	int delta = 2;
+        int targetPosition;
 
-	while((joy1Btn(1)) && (joy2Btn(1)) && ServoValue[ramp_servo] < 255)
-
+	if ((joy1Btn(BTN_DEPLOY_RAMP)) && (joy2Btn(BTN_DEPLOY_RAMP)) 
+             && ServoValue[ramp_servo] != SERVO_TARGET_POSITION)
 	{
-		servoChangeRate[ramp_servo] = delta;
+		servoChangeRate[ramp_servo] = SERVO_RATE_OF_CHANGE;
+		servoTarget[ramp_servo] = SERVO_TARGET_POSITION;
 	}
 }
