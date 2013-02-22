@@ -21,9 +21,9 @@
 #define BTN_DEPLOY_RAMP         1
 
 #define POWER_TILT_UP        -100
-#define POWER_TILT_DOWN        25 
+#define POWER_TILT_DOWN        25
 
-#define POWER_EXTENSION_UP     25   
+#define POWER_EXTENSION_UP     25
 #define POWER_EXTENSION_DOWN -100
 
 #define SERVO_RATE_OF_CHANGE    2
@@ -37,23 +37,13 @@
 
 task main()
 {
-
-
-
 	while(true)
 	{
 		getJoystickSettings(joystick);
-
 
 		Driver();
 		arm_tilt();
 		arm_extension();
 		ramp();
-
 	}
-
-
-
-
-
 }
